@@ -18,7 +18,7 @@ state = {
 
 getWeather = async () => {
       const url = await
-      fetch(`https://api.openweathermap.org/data/2.5/weather?q=Kazan,ru&appid=3ea9ff78ed5852fa82da8ebfc049f548&units=metric`);
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=Kazan,ru&appid={API_KEY}&units=metric`);
       const data = await url.json();
       this.setState({
         city: data.name,
